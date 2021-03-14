@@ -11,6 +11,21 @@ package com.exerciseFourPointTwoOne;
 //        b) number: The integer most recently input by the user.
 //        c) largest: The largest number found so far.
 
-public class LargestNumber {
-     
+public class LargestNumberDeterminant {
+
+    private int largestNumber;
+
+    public LargestNumberDeterminant(int largestNumber) {
+        this.largestNumber = largestNumber;
+    }
+
+    public void setNumber(int number) {
+        if (number > largestNumber)
+        largestNumber = number;
+    }
+
+
+    public int getLargestNumber() {
+        return largestNumber;
+    }
 }
