@@ -2,20 +2,30 @@ package com.exerciseFourPointTwoOne;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LargestNumberTest {
-    LargestNumber largestNumber;
+class LargestNumberDeterminantTest {
+    LargestNumberDeterminant largestNumberDeterminant;
 
     @BeforeEach
     void setUp() {
-        largestNumber = new LargestNumber();
+        largestNumberDeterminant = new LargestNumberDeterminant(5);
     }
 
     @AfterEach
     void tearDown() {
     }
+
+    @Test
+    void numberCanBeGotten(){
+        largestNumberDeterminant.setNumber(19);
+        assertEquals(19,largestNumberDeterminant.getLargestNumber());
+    }
+
+
+
 
 
 }
